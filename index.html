@@ -3,28 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Tic Tac Toe</title>
 </head>
 <body>
-  <h1>Tic Tac Toe</h1>
-  <div class="gameboard">
-    <!-- <div class="game-square" id="game-square"></div>
-    <div class="game-square" id="game-square"></div>
-    <div class="game-square" id="game-square"></div>
-    <div class="game-square" id="game-square"></div>
-    <div class="game-square" id="game-square"></div>
-    <div class="game-square" id="game-square"></div>
-    <div class="game-square" id="game-square"></div>
-    <div class="game-square" id="game-square"></div>
-    <div class="game-square" id="game-square"></div> -->
-  </div>
-  <div id="controls">
-    <input type="text" id="player1" placeholder="Player 1 Name">
-    <input type="text" id="player2" placeholder="Player 2 Name">
-  </div>
-  <button id="start-button">Start Game</button>
-  <button id="restart-button">Restart Game</button>
-  <div id="message"></div>
-  <div id="result-display"></div>
+  <div id="game-container" class="game-container">
+    <h1>Tic Tac Toe</h1>
+    <div id="cell-container" class="cell-container">
+      <div cellIndex="0" class="cell">X</div>
+      <div cellIndex="1" class="cell">O</div>
+      <div cellIndex="2" class="cell"></div>
+      <div cellIndex="3" class="cell"></div>
+      <div cellIndex="4" class="cell"></div>
+      <div cellIndex="5" class="cell"></div>
+      <div cellIndex="6" class="cell"></div>
+      <div cellIndex="7" class="cell"></div>
+      <div cellIndex="8" class="cell"></div>
+    </div>
+    <h2 id="status-text" class="status-text"></h2>
+    <button id="restart-button" class="restart-button">Restart Game</button>
+  </div>  
+<script src="script.js"></script>
 </body>
 </html>
